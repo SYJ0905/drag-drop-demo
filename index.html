@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML 5 拖曳功能</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheet/all.css">
+</head>
+<body>
+  <div class="container my-3">
+    <h3>以下操作請在各別區塊操作，目前無分開撰寫，所以拖曳功能會干擾</h3>
+  </div>
+  <section class="my-3">
+    <div class="container">
+      <h2>Drag and Drop Basic 1 time <span>只能拖曳一次</span></h2>
+      <div id="drag_drop_basic">
+        <div class="soruce_container">
+          <div id="drag_source_basic" draggable="true"></div>
+        </div>
+        <div class="target_container" class="target_container"></div>
+      </div>
+    </div>
+  </section>
+  <section class="my-3">
+    <div class="container">
+      <h2>Drag and Drop with multiple sources in multiple containers <sapn>來回拖曳數次</sapn></h2>
+      <div id="drag_drop_multiple">
+        <div class="soruce_container" data-role="drag_drop_container">
+          <div id="drag_source_multiple" draggable="true"></div>
+        </div>
+        <div class="target_container" data-role="drag_drop_container"></div>
+      </div>
+    </div>
+  </section>
+  <section class="my-3">
+    <div class="container">
+      <h2>拖拉排序的清單</h2>
+      <ul class="drag_sort_enable">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="/all.js"></script>
+</body>
+</html>
